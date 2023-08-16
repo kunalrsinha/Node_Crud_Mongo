@@ -12,23 +12,4 @@ const userRoutes = require('./controllers/user_controlles');
 
 app.use('/user_list',userRoutes);
 app.use(errorHandles);
-// Try to connect with mongoose pending
-
-// const userSchema = new connectDB.Schema({
-//    name: String,
-//    age: Number,
-//    email: String,
-//    city: String,
-// });
-
-// const User = connectDB.model('user', userSchema);
-// const newUser = new User({
-//    name: 'Anil',
-//    age: 44,
-//    email: 'anil@gmail.com',
-//    city: 'Gurugram'
-// });
-// newUser.save()
-//   .then(doc => console.log(doc))
-//   .catch(err => console.error(err));   
 app.listen(port , ()=> console.log('Server is up on port : ' + port));

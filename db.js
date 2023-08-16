@@ -1,4 +1,3 @@
-
 // Need to connect with mongoose package
 const mongoose = require('mongoose');
 const dbUri = "mongodb+srv://admin:9454@cluster0.jcz0xk4.mongodb.net/user_db?retryWrites=true&w=majority"
